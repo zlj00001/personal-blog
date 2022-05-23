@@ -19,15 +19,16 @@
 }
 
 body {
-    align-items: center;
     background-color: var(--white);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    place-items: center;
+    background: url(../img/logbg.png)no-repeat -0 -100px;
+    background-size: 100% 100%;
     background-size: cover;
 }
 
