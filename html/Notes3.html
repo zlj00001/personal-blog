@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+
+    <link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext'
+        rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="../css/Notes1.css">
+    <!-- <link rel="stylesheet" href="../css/common.css"> -->
+    <link rel="icon" href="../water-favicon.ico">
+    <title>笔记</title>
+</head>
+
+<body class='typora-export os-windows'>
+    <header>
+        <a href="#" class="logo">Zhang li jie</a>
+        <nav>
+            <ul id="nav-select">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="./about.html">关于</a></li>
+                <li><a href="./blog.html">博客</a></li>
+                <li class="navigation-select"><a href="./myNotes.html">笔记</a></li>
+                <li><a href="./entertainment.html">其他</a></li>
+                <li><a href="./pray.html">吐槽</a></li>
+            </ul>
+        </nav>
+        <div class="reg">
+            <a href="./logRegister.html" target="_blank"></a>
+        </div>
+    </header>
+    <div class='typora-export-content'>
+        <div id='write' class=''>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <h1 id='1git和linux的历史'><span>1、Git和Linux的历史</span></h1>
+            <p><img src="https://img-blog.csdnimg.cn/20210327142529507.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+                    referrerpolicy="no-referrer"></p>
+            <p><span> 这个大佬就是Linux和Git之父，Linus Benedict Torvalds（林纳斯·本纳第克特·托瓦兹）。</span></p>
+            Linux内核开源项目有很广泛的参与者。绝大多数的Linux内核维护工作都花在了提交补丁和保存文档的繁琐事务上（1991 -
+            2002年）。到了2002年，整个项目组开始启用一个专有的分布式版本控制系统Bitkeeper来管理和维护代码。
+
+            由于Linux社区中有很多大佬！那些大佬尝试破解研究Bitkeeper，在2005年，开发Bitkeeper的商业公司同Linux内核开源社区的合作关系结束，他们收回了Linux内核社区免费使用的权利。
+            <p><span>
+                    不给用就不给用呗，我Linux系统都做出来了，再做一个管理维护代码的系统有何难，然后</span><strong><span>Linus花了两周时间开发出了Git</span></strong><span>，什么是大神啊，这就是大神，大学期间开发了Linux系统，只用两周开发出至今我们都在使用的Git，简直成神了。</span>
+            </p>
+            <p><span> </span><strong><span>Git是世界上最先进的分布式版本控制系统</span></strong></p>
+            <h1 id='2常用的linux命令'><span>2、常用的Linux命令</span></h1>
+            <p><span>1、cd：改变目录</span></p>
+            <p><span>2、cd..退回到上一个目录，直接cd进入目录</span></p>
+            <p><span>3、pwd：显示当前所在的目录路径</span></p>
+            <p><span>4、ls：列出当前目录中的所有文件</span></p>
+            <p><span>5、touch：新建一个文件夹，如touch index.js 就会在当前目录下新建一个</span>
+                <span>index.js文件</span>
+            </p>
+            <p><span>6、rm：删除一个文件，rm index.js 就会把index.js文件删除</span></p>
+            <p><span>7、mkdir：新建一个目录，就是新建一个文件夹</span></p>
+            <p><span>8、rm -r：删除一个文件夹，rm -r src删除src目录</span>
+                <span> </span><strong><span>rm -rf / ：切勿轻易尝试，递归删除操作，能删除电脑中所有文件</span></strong>
+            </p>
+            <p><span>9、reset：重新初始化终端/清屏</span></p>
+            <p><span>10、clear：清屏</span></p>
+            <p><span>11、history：查看命令历史</span></p>
+            <p><span>12、help：帮助</span></p>
+            <p><span>13、exit：退出</span></p>
+            <p><span>14、#表示注释</span></p>
+            <h1 id='3git基本理论核心）'><span>3、Git基本理论（核心）</span></h1>
+            <pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false"
+                lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.35938px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Git本地有三个工作区域：工作目录（working directory）、暂存（stage/index）、资源库（repository或Git directory）。如果加上远程的Git仓库（remote directory）就可以分为四个工作区域。</span></pre>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div>
+    <div class="CodeMirror-gutters" style="display: none; height: 46px;"></div>
+    </div>
+    </div>
+    </pre>
+    <p><img src="https://img-blog.csdnimg.cn/2021032714595490.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer" alt="在这里插入图片描述"></p>
+    <p><span>workspace：工作区，平时存放项目代码的地方</span></p>
+    <p><span>index/stage：暂存区，用于临时存放你的改动，事实上它只是一个文件，保存即将提交到文件列表信息</span></p>
+    <p><span>repository：仓库区（本地仓库），就是安全存放数据的位置，这里面有你提交到所有版本的数据。其中HEAD指向最新放入仓库的版本</span></p>
+    <p><span>remote：远程仓库，托管代码的服务器，可以简单的认为是你项目中的一台电脑用于远程数据交换。</span></p>
+    <p><img src="https://img-blog.csdnimg.cn/2021032715154414.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer">
+        <span>注意这是个隐藏文件夹，需要手动设置才能看到</span>
+        <img src="https://img-blog.csdnimg.cn/20210327151822525.png#pic_center" referrerpolicy="no-referrer">
+    </p>
+    <h4 id='工作流程'><span>工作流程：</span></h4>
+    <p><span>1、在工作目录中添加，修改文件；</span>
+        <span>2、将需要进行版本管理的文件放入暂存区域；git add .</span>
+        <span>3、将暂存区的文件提交到git仓库；git commit</span>
+    </p>
+    <h1 id='4git项目搭建'><span>4、Git项目搭建</span></h1>
+    <p><span>工作目录（WorkSpace）一般是你希望Git帮助你管理的文件，可以是你项目的目录，也可以是一个空目录，建议不要有中文。</span>
+        <img src="https://img-blog.csdnimg.cn/20210327152752208.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer">
+        <span>这六个命令建议记住。</span>
+    </p>
+    <h4 id='本地仓库搭建'><span>本地仓库搭建</span></h4>
+    <p><span>1、在当前目录新建一个Git代码库</span>
+        <span>$ git init</span>
+        <img src="https://img-blog.csdnimg.cn/20210327153534745.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer" alt="在这里插入图片描述">
+    </p>
+    <p><span>2、克隆远程目录，将远程服务器上的仓库完全镜像一份到本地</span>
+        <span>$ git clone [url]</span>
+        <img src="https://img-blog.csdnimg.cn/20210327154052990.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZGubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer" alt="在这里插入图片描述">
+        <img src="https://img-blog.csdnimg.cn/20210327154749266.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer">
+    </p>
+    <h1 id='5git文件操作'><span>5、Git文件操作</span></h1>
+    <p><span>版本控制就是对文件的版本控制，要对文件进行修改、提交等操作，首先要知道文件当前在什么状态，不然可能会提交现在还不想提交的文件，或者要提交的文件没提交上。</span></p>
+    <p><span>Untracked：未跟踪，此文件在文件夹中，但并没有加入到git库，不参与版本控制，通过git add 状态变为 staged。</span></p>
+    <p><span>Unmodify：文件已入库，未修改，即版本库中的文件快照内容与文件夹中完全一致，这种类型的文件有两种去处，如果它被修改，就变为Modified，如果使用 git rm 移出版本库，则成为 Untracked
+            文件</span></p>
+    <p><span>Modified：文件已修改，仅仅是修改，并没有进行其他操作，这个文件也有两种去处，通过 git add 可进入暂存 staged 状态，使用 git checkout
+            则丢弃修改过，返回到Modified状态，说白了就是从库中取出文件，覆盖当前修改。</span></p>
+    <p><span>Stage：暂存状态，执行git commit 则将修改同步到库中，这时库中的文件和本地文件又变为一致，文件为Unmodify状态。执行 git reset HEAD filename取消暂存，文件状态为
+            Modified。</span></p>
+    <p><img src="https://img-blog.csdnimg.cn/20210327161229645.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer">
+        <span>上图文件没有被跟踪，下图文件被跟踪了，变成待提交状态。</span>
+        <img src="https://img-blog.csdnimg.cn/2021032716143743.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer">
+        <span>git commit -m 提交暂存区中的内容到本地仓库</span>
+        <img src="https://img-blog.csdnimg.cn/20210327161822241.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer">
+        <span>一般我们会把代码全部放在工作目录下。</span>
+    </p>
+    <h4 id='忽略文件'><span>忽略文件</span></h4>
+    <p><span>有时候我们不想把某些文件纳入版本控制中，比如数据库文件，临时文件，设计文件等</span>
+        <span>在主目录下建立&quot;.gitignore&quot;文件，此文件有以下规则,以例子说明：</span>
+    </p>
+    <figure>
+        <table>
+            <thead>
+                <tr>
+                    <th><span>#为注释</span></th>
+                    <th><span>解释</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>*.txt（其他文件也是一样）</span></td>
+                    <td><span>#忽略所有 .txt文件</span></td>
+                </tr>
+                <tr>
+                    <td><span>！lib.txt</span></td>
+                    <td><span># lib.txt除外</span></td>
+                </tr>
+                <tr>
+                    <td><span>/temp</span></td>
+                    <td><span>#仅忽略项目根目录下的TODO文件，不包含其他目录temp</span></td>
+                </tr>
+                <tr>
+                    <td><span>build/</span></td>
+                    <td><span>#忽略build/目录下所有文件</span></td>
+                </tr>
+                <tr>
+                    <td><span>doc/*.txt</span></td>
+                    <td><span># 忽略doc/notes.txt但不包括doc/server/arch.txt</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+    <h1 id='6github的使用'><span>6、GitHub的使用</span></h1>
+    <p><span>国内有个gitee，用法和GitHub是一样的，由于GitHub是国外网站，访问速度会比较慢，有时候甚至进不去，所以也可去使用gitee。</span></p>
+    <h4 id='1设置本机绑定ssh公钥实现免密码登录'><span>1、设置本机绑定ssh公钥，实现免密码登录</span></h4>
+    <p><span>GitHub是远程仓库，我们平时工作的是本地仓库。</span>
+        <img src="https://img-blog.csdnimg.cn/20210327164902329.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer">
+        <span>用户目录下新建.ssh文件,使用ssh-keygen -t rsa生成公钥，一直回车直到公钥生成完毕。</span>
+        <img src="https://img-blog.csdnimg.cn/20210327165301679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer">
+        <span>打开.pub的那个文件，把里面的内容复制到ssh,设置标题，就OK了</span>
+        <span>.</span><img
+            src="https://img-blog.csdnimg.cn/20210327170312494.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer">
+    </p>
+    <h4 id='2使用github新建一个仓库'><span>2、使用GitHub新建一个仓库</span></h4>
+    <p><img src="https://img-blog.csdnimg.cn/20210327170936898.png#pic_center" referrerpolicy="no-referrer">
+        <span>然后</span>
+        <img src="https://img-blog.csdnimg.cn/20210328112314533.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pael9fX19fX18=,size_16,color_FFFFFF,t_70#pic_center"
+            referrerpolicy="no-referrer">
+    </p>
+    </div>
+    </div>
+</body>
+
+</html>

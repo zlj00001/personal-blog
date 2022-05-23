@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/headNav.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/player.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="icon" href="./water-favicon.ico">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Zhang li jie</a>
+        <nav>
+            <ul id="nav-select">
+                <li class="navigation-select"><a href="#">首页</a></li>
+                <li><a href="./html/about.html">关于</a></li>
+                <li><a href="./html/blog.html">博客</a></li>
+                <li><a href="./html/myNotes.html">笔记</a></li>
+                <li><a href="./html/entertainment.html">其他</a></li>
+                <li><a href="./html/pray.html">吐槽</a></li>
+            </ul>
+        </nav>
+        <div class="reg">
+            <a href="./html/logRegister.html" target="_blank"></a>
+        </div>
+    </header>
+
+    <div class="w">
+        <div class="main">
+            <div class="left">
+                <div class="carousel-image">
+                    <div class="img-list" id="imglist">
+                        <img src="./upload/p1.png" alt="">
+                        <img src="./upload/p2.png" alt="">
+                        <img src="./upload/p3.png" alt="">
+                        <img src="./upload/p4.png" alt="">
+                        <img src="./upload/p5.png" alt="">
+                    </div>
+                    <div class="arrow hidden-arrow">
+                        <a href="javascript:;" class="l" id="l">
+                            < </a>
+                                <a href="javascript:;" class="r" id="r">></a>
+                    </div>
+
+                    <ul class="circle-list">
+                        <li class="circle active" data-n="0"></li>
+                        <li class="circle" data-n="1"></li>
+                        <li class="circle" data-n="2"></li>
+                        <li class="circle" data-n="3"></li>
+                        <li class="circle" data-n="4"></li>
+                    </ul>
+                </div>
+                <div class="title">
+                    <h3>
+                        <a href="#">给岁月以文明,而不是给文明以岁月</a>
+                    </h3>
+                    <p>生存在宇宙中，本身就是一件很幸运的事情
+                        但是不知道什么时候起，你们有了这样一种幻想，认为生存是唾手可得的，
+                        这就是你们失败的根本原因
+                    </p>
+                </div>
+                <div class="content-one">
+                    <div class="title">日落</div>
+                    <div class="news">
+                        <div class="new-img"></div>
+                        <div class="news-content">
+                            <div class="part">
+                                <div class="p-img"><img src="./img/img1.png" alt=""></div>
+                                <div class="p-content">
+                                    <a href="#">没有救世能力不是你的错，但给世界以希望后又打碎它就是一种不可饶恕的罪恶了</a>
+                                    <div class="time">2022-5-12</div>
+                                </div>
+                            </div>
+
+                            <div class="part">
+                                <div class="p-img"><img src="./img/img2.png" alt=""></div>
+                                <div class="p-content">
+                                    <a href="#">不要回答！ 不要回答！ 不要回答！</a>
+                                    <div class="time">2022-5-12</div>
+                                </div>
+                            </div>
+
+                            <div class="part">
+                                <div class="p-img"><img src="./img/img3.png" alt=""></div>
+                                <div class="p-content">
+                                    <a href="#">不要返航，这里不是家！</a>
+                                    <div class="time">2022-5-12</div>
+                                </div>
+                            </div>
+
+                            <div class="part">
+                                <div class="p-img"><img src="./img/img4.png" alt=""></div>
+                                <div class="p-content">
+                                    <a href="#">在此向人类文明的延续者：章北海同志，致以最崇高的敬意！</a>
+                                    <div class="time">2022-5-12</div>
+                                </div>
+                            </div>
+
+                            <div class="part">
+                                <div class="p-img"><img src="./img/img5.png" alt=""></div>
+                                <div class="p-content">
+                                    <a href="#">自然选择，前进四！</a>
+                                    <div class="time">2022-5-12</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="part">
+                    <h4>时间</h4>
+                    <div class="current-times">
+                        <div class="time1">
+                            <div class="time-hour">00</div>
+                            <div class="time-split">:</div>
+                            <div class="time-minute">00</div>
+                            <div class="time-split">:</div>
+                            <div class="time-second">00</div>
+                        </div>
+                        <div class="time2">
+                            <div class="time-year">00</div>
+                            <div class="time-split">-</div>
+                            <div class="time-month">00</div>
+                            <div class="time-split">-</div>
+                            <div class="time-day">00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="part">
+                    <h4>音乐</h4>
+                    <div class="music">
+                        <div id="player">
+                            <!-- 歌曲信息模块 -->
+                            <div id="player-content1">
+                                <!-- 歌曲名 -->
+                                <div class="music-name"></div>
+                                <!-- 歌手名 -->
+                                <div class="artist-name"></div>
+                                <!-- 歌曲时间 -->
+                                <div class="time">
+                                    <!-- 当前播放的时间 -->
+                                    <div class="current-time"></div>
+                                    <!-- 歌曲总时长 -->
+                                    <div class="total-time"></div>
+                                </div>
+                                <!-- 进度条 -->
+                                <div id="s-area">
+                                    <!-- 鼠标移动到进度条上，显示的时间信息 -->
+                                    <div id="ins-time"></div>
+                                    <!-- 鼠标移动到进度条上，进度条变暗部分-->
+                                    <div id="s-hover"></div>
+                                    <!-- 表示当前歌曲播放进度的蓝色进度条 -->
+                                    <div id="seek-bar"></div>
+                                </div>
+                            </div>
+
+                            <!-- 控制模块 -->
+                            <div id="player-content2">
+                                <!-- 左侧歌曲封面旋转模块 -->
+                                <div class="music-imgs">
+                                    <!-- 封面图 -->
+                                    <div class="img"></div>
+                                    <!-- 歌曲缓冲时的提示文字 -->
+                                    <div id="buffer-box">缓冲…</div>
+                                </div>
+                                <!-- 右侧歌曲操作模块 -->
+                                <div class="player-controls">
+                                    <!-- 上一首按钮 -->
+                                    <div class="btn prev iconfont">&#xe603;</div>
+                                    <!-- 暂停/播放 按钮 -->
+                                    <div class="btn play-pause icon-jiediankaishi iconfont"></div>
+                                    <!-- 下一首按钮 -->
+                                    <div class="btn next iconfont">&#xe602;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="part">
+                    <h4>分享</h4>
+                    <div class="share">
+                        <div class="share-1">
+                            <a href="#">分享到 QQ</a>
+                        </div>
+                        <div class="share-1">
+                            <a href="#">分享到 微信</a>
+                        </div>
+                        <div class="share-1">
+                            <a href="#">分享到 GitHub</a>
+                        </div>
+                        <div class="share-1">
+                            <a href="#">分享到 微博</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="title2">繁星</div>
+            <div class="layout">
+                <div class="img-text">
+                    <div class="img-box"><img src="./img/firefly.png" alt=""></div>
+                    <div class="text-box">
+                        <a href="#">妈妈，我将变成一只萤火虫</a>
+                        <p>这是一位即将出击的日本神风队队员写给妈妈的遗书。面壁人泰勒，在执行他以毁灭人类自身舰队自身为代价的计划中，脑海中不断回响的话。也许泰勒在计划代价如此之大的行动中，内心也曾有过一丝凄凉。
+                        </p>
+                        <a href="#" class="more">更多</a>
+                    </div>
+                </div>
+
+                <div class="img-text">
+                    <div class="img-box"><img src="./img/deer.png" alt=""></div>
+                    <div class="text-box">
+                        <a href="#">失去人性，失去很多；失去兽性，失去一切</a>
+                        <p>维德对程心说。维德的这番话经典地总结了人类野蛮发展的一切，只有保持兽性，才能进步（但是不是毫无顾虑地释放兽性）。就像我们现今的几乎所有科技都是由军事科技下放到民用领域的，比如GPS，比如手机，比如电脑……
+                        </p>
+                        <a href="#" class="more">更多</a>
+                    </div>
+                </div>
+
+                <div class="img-text">
+                    <div class="img-box"><img src="./img/ignore.png" alt=""></div>
+                    <div class="text-box">
+                        <a href="#">不理睬是最大的轻蔑</a>
+                        <p>第一次是出现在泰勒这里。当他被破壁之后，面对高高在上的三体人，心态彻底崩了，告诉罗辑之后便在湖边饮弹自尽；而后罗辑在和三体人对峙的时候，重复了这句话，大意就是今天你对我爱答不理，明天大家一起玩完。
+                        </p>
+                        <a href="#" class="more">更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="Contact-information">
+            <div class="my-img">
+                <div class="aaa"></div>
+            </div>
+            <div class="most-news">
+                <h4>最新博客</h4>
+                <a href="#">MySql搜索优化</a>
+            </div>
+            <div class="most-news">
+                <h4>联系我</h4>
+                <a href="#">QQ:2950704540</a>
+                <a href="#">2950704540@qq.com</a>
+            </div>
+            <div class="myblog">
+                <h4>BLOG</h4>
+                <p>
+                    这是我的个人博客、记录学习进度和关于编程、写作、思考相关的任何内容...
+                </p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright</p>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/music.js"></script>
+    <script src="./js/headNav.js"></script>
+</body>
+
+</html>

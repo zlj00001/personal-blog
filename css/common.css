@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 38, 38);
+    opacity: 0.8;
+}
+
+footer .Contact-information {
+    margin-top: 30px;
+    display: flex;
+    width: 1127px;
+    height: 150px;
+    border-bottom: 1px solid rgb(157, 154, 154);
+}
+
+.Contact-information h4 {
+    color: rgb(157, 154, 154);
+}
+
+.Contact-information .my-img {
+    width: 216px;
+    height: 138px;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid rgb(157, 154, 154);
+}
+
+.Contact-information a {
+    color: rgb(157, 154, 154);
+    font-size: 12px;
+}
+
+.Contact-information .my-img .aaa {
+    width: 110px;
+    height: 110px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: url(../img/anlijie.webp);
+    background-size: 100px 110px;
+    background-color: #fff;
+}
+
+.Contact-information .most-news {
+    width: 216px;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid rgb(157, 154, 154);
+}
+
+.Contact-information .myContact {
+    width: 216px;
+    height: 138px;
+}
+
+.Contact-information .myblog {
+    flex: 1;
+    padding: 0 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contact-information .myblog p {
+    margin-top: 5px;
+    color: rgb(157, 154, 154);
+}
+
+footer .copyright {
+    margin-top: 50px;
+    width: 1127px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .copyright p {
+    color: rgb(157, 154, 154);
+}

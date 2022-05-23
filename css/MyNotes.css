@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: rgb(235, 235, 235);
+}
+
+.main-content {
+    width: 100%;
+    padding-top: 8px;
+}
+
+.main-content .top {
+    height: 120px;
+    background: white;
+    border-bottom: 1px solid black;
+
+}
+
+.main-content .top .name {
+    width: 100px;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 30px;
+    float: left;
+}
+
+.main-content .top .nav ul {
+    width: 700px;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    float: right;
+
+}
+
+.main-content .top .nav ul li .quote {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+}
+
+.main-content .top .nav ul li {
+    margin-top: 50px;
+    list-style: none;
+    padding-right: 10px;
+
+
+}
+
+.main-content .top .nav ul li a {
+    position: relative;
+    display: block;
+    margin: 10px 20px;
+    padding-top: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: .5s;
+    text-align: center;
+
+}
+
+.main-content .top ul li a:hover {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+
+}
+
+.main-content .title {
+    width: 900px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.main-content .title h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: #3F6580 solid 1px;
+}
+
+.main-content .container {
+    width: 900px;
+    align-content: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.main-content .container .box {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    background: white;
+    padding: 50px 20px 20px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
+    transform: translateY(20px);
+    transition: .5s;
+
+}
+
+.main-content .container .box:hover {
+    background: url(../img/bg4.jpg);
+    background-size: cover;
+    transform: translateY(0px);
+}
+
+.main-content .container .box p {
+    height: 150px;
+    line-height: 150%;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.main-content .container .box:hover p {
+    font-weight: 400;
+}
+
+.main-content .container .box a {
+    text-decoration: none;
+}
+
+.main-content .container .box a i {
+    color: white;
+}
+
+.main-content .container .box:hover a i {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 13px;
+    padding-right: 30px;
+}
+
+.main-content .container .box:hover a i:hover {
+    color: #3F6580;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 38, 38);
+    opacity: 0.8;
+}
+
+footer .Contact-information {
+    margin-top: 30px;
+    display: flex;
+    width: 1127px;
+    height: 150px;
+    border-bottom: 1px solid rgb(157, 154, 154);
+}
+
+.Contact-information h4 {
+    color: rgb(157, 154, 154);
+}
+
+.Contact-information .my-img {
+    width: 216px;
+    height: 138px;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid rgb(157, 154, 154);
+}
+
+.Contact-information a {
+    color: rgb(157, 154, 154);
+    font-size: 12px;
+}
+
+.Contact-information .my-img .aaa {
+    width: 110px;
+    height: 110px;
+    background: url(../img/anlijie.webp);
+    background-size: 100px 110px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.Contact-information .most-news {
+    width: 216px;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid rgb(157, 154, 154);
+}
+
+.Contact-information .myContact {
+    width: 216px;
+    height: 138px;
+}
+
+.Contact-information .myblog {
+    flex: 1;
+    padding: 0 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contact-information .myblog p {
+    margin-top: 5px;
+    color: rgb(157, 154, 154);
+}
+
+footer .copyright {
+    margin-top: 50px;
+    width: 1127px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .copyright p {
+    color: rgb(157, 154, 154);
+}
